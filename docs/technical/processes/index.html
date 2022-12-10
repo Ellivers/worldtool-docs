@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v2.2.0">
 <title data-rh="true">Processes | WorldTool Documentation</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://ellivers.github.io/worldtool-docs/docs/technical/processes"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Processes | WorldTool Documentation"><meta data-rh="true" name="description" content="A process is some code that repeats itself and is run every tick until it&#x27;s done."><meta data-rh="true" property="og:description" content="A process is some code that repeats itself and is run every tick until it&#x27;s done."><link data-rh="true" rel="icon" href="/worldtool-docs/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://ellivers.github.io/worldtool-docs/docs/technical/processes"><link data-rh="true" rel="alternate" href="https://ellivers.github.io/worldtool-docs/docs/technical/processes" hreflang="en"><link data-rh="true" rel="alternate" href="https://ellivers.github.io/worldtool-docs/docs/technical/processes" hreflang="x-default"><link rel="stylesheet" href="/worldtool-docs/assets/css/styles.69197030.css">
-<link rel="preload" href="/worldtool-docs/assets/js/runtime~main.9ae273ce.js" as="script">
+<link rel="preload" href="/worldtool-docs/assets/js/runtime~main.59a37b06.js" as="script">
 <link rel="preload" href="/worldtool-docs/assets/js/main.51f09d9d.js" as="script">
 </head>
 <body class="navigation-with-keyboard">
@@ -38,27 +38,27 @@
 <!-- --> <!-- --> <!-- --> <!-- --> <code>State</code> (Compound) - The block&#x27;s state.<br>
 <!-- --> <!-- --> <!-- --> <!-- --> <!-- --> <!-- --> <code>Name</code> (String) - The block&#x27;s ID.<br>
 <!-- --> <!-- --> <!-- --> <!-- --> <!-- --> <!-- --> <!-- -->(Other values)<br>
-<!-- --> <!-- --> <!-- --> <!-- --> <code>Data</code> (Compound, optional) - The block&#x27;s data.
+<!-- --> <!-- --> <!-- --> <!-- --> <code>Data</code> (Compound, optional) - The block&#x27;s data.<br>
 <code>AffectedArea</code> (Compound, optional) - Information to give to the backup process, if the affected area is not within the standard positions.<br>
 <!-- --> <!-- --> <code>From</code> (List of 3 doubles) - The first corner.<br>
 <!-- --> <!-- --> <code>To</code> (List of 3 doubles) - The second corner.<br>
-<code>Owner</code> (Integer, optional) - The WorldTool ID of the user that started the process.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="list-of-processes">List of Processes<a class="hash-link" href="#list-of-processes" title="Direct link to heading">​</a></h2><p>A list of all processes and their most important data. In no particular order.</p><p>&lt;<!-- -->&gt;<!-- --> around a value denotes that the value is not always there.</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="fill">Fill<a class="hash-link" href="#fill" title="Direct link to heading">​</a></h3><p>The process for filling an area. Used by the General Tool&#x27;s Fill operation and the Brush Tool&#x27;s Place brush.<br>
+<code>Owner</code> (Integer, optional) - The WorldTool ID of the user that started the process.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="list-of-processes">List of Processes<a class="hash-link" href="#list-of-processes" title="Direct link to heading">​</a></h2><p>A list of all processes and their most important data. In no particular order.</p><p>&lt;<!-- -->&gt;<!-- --> around a value denotes that the value is not always there.</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="fill">Fill<a class="hash-link" href="#fill" title="Direct link to heading">​</a></h3><p>The process for filling an area. Used by the General Tool&#x27;s <a href="/worldtool-docs/docs/general-tool/fill">Fill operation</a> and the Brush Tool&#x27;s <a href="/worldtool-docs/docs/brush_tool/place">Place brush</a>.<br>
 <code>ID</code>: <code>worldtool:fill</code><br>
 <code>Tags</code>: <!-- -->[<br>
 <!-- --> <!-- --> <code>wt.process.fill</code><br>
-]</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="replace">Replace<a class="hash-link" href="#replace" title="Direct link to heading">​</a></h3><p>The process for replacing blocks in an area. Used by the General Tool&#x27;s Replace operation.<br>
+]</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="replace">Replace<a class="hash-link" href="#replace" title="Direct link to heading">​</a></h3><p>The process for replacing blocks in an area. Used by the General Tool&#x27;s <a href="/worldtool-docs/docs/general-tool/replace">Replace operation</a>.<br>
 <code>ID</code>: <code>worldtool:replace</code><br>
 <code>Tags</code>: <!-- -->[<br>
 <!-- --> <!-- --> <code>wt.process.replace</code><br>
 <!-- --> <!-- --> <!-- -->&lt;<code>wt.process.replace.normal</code>&gt;<br>
 <!-- --> <!-- --> <!-- -->&lt;<code>wt.process.replace.exclude</code>&gt;<br>
-]</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="filter-measure">Filter Measure<a class="hash-link" href="#filter-measure" title="Direct link to heading">​</a></h3><p>The process for counting specific blocks in an area. Used by the General Tool&#x27;s Measure &gt; Filter operation.<br>
+]</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="filter-measure">Filter Measure<a class="hash-link" href="#filter-measure" title="Direct link to heading">​</a></h3><p>The process for counting specific blocks in an area. Used by the General Tool&#x27;s <a href="/worldtool-docs/docs/general-tool/measure">Measure &gt; Filter operation</a>.<br>
 <code>ID</code>: <code>worldtool:filter_measure</code><br>
 <code>Tags</code>: <!-- -->[<br>
 <!-- --> <!-- --> <code>wt.process.filter_measure</code><br>
 <!-- --> <!-- --> <!-- -->&lt;<code>wt.process.filter_measure.normal</code>&gt;<br>
 <!-- --> <!-- --> <!-- -->&lt;<code>wt.process.filter_measure.exclude</code>&gt;<br>
-]</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="clone">Clone<a class="hash-link" href="#clone" title="Direct link to heading">​</a></h3><p>The process for cloning an area to another place. Used by the General Tool&#x27;s Clone operation with the Standard mode.<br>
+]</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="clone">Clone<a class="hash-link" href="#clone" title="Direct link to heading">​</a></h3><p>The process for cloning an area to another place. Used by the General Tool&#x27;s <a href="/worldtool-docs/docs/general-tool/clone">Clone operation</a> with the <a href="/worldtool-docs/docs/general-tool/clone#modes">Standard mode</a>.<br>
 <code>ID</code>: <code>worldtool:clone</code><br>
 <code>Tags</code>: <!-- -->[<br>
 <!-- --> <!-- --> <code>wt.process.clone</code><br>
@@ -83,19 +83,19 @@
 <!-- --> <!-- --> <!-- --> <!-- --> <code>X</code> (Integer) - Rotation around the X axis<br>
 <!-- --> <!-- --> <!-- --> <!-- --> <code>Y</code> (Integer) - Rotation around the Y axis<br>
 <!-- --> <!-- --> <!-- --> <!-- --> <code>Z</code> (Integer) - Rotation around the Z axis<br>
-}</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="randomization-source">Randomization Source<a class="hash-link" href="#randomization-source" title="Direct link to heading">​</a></h3><p>The process for selecting a source for randomization. Used by the General Tool&#x27;s Randomize operation.<br>
+}</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="randomization-source">Randomization Source<a class="hash-link" href="#randomization-source" title="Direct link to heading">​</a></h3><p>The process for selecting a source for randomization. Used by the General Tool&#x27;s <a href="/worldtool-docs/docs/general-tool/randomize#select-source">Randomize operation</a>.<br>
 <code>ID</code>: <code>worldtool:randomization_source</code><br>
 <code>Tags</code>: <!-- -->[<br>
 <!-- --> <!-- --> <code>wt.process.randomization_source</code><br>
 <!-- --> <!-- --> <code>wt.no_message</code><br>
 <!-- --> <!-- --> <!-- -->&lt;<code>wt.process.randomization_source.exclude</code>&gt;<br>
-]</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="randomize">Randomize<a class="hash-link" href="#randomize" title="Direct link to heading">​</a></h3><p>The process for picking random blocks. Used by the General Tool&#x27;s Randomize operation.<br>
+]</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="randomize">Randomize<a class="hash-link" href="#randomize" title="Direct link to heading">​</a></h3><p>The process for picking random blocks. Used by the General Tool&#x27;s <a href="/worldtool-docs/docs/general-tool/randomize">Randomize operation</a>.<br>
 <code>ID</code>: <code>worldtool:randomize</code><br>
 <code>Tags</code>: <!-- -->[<br>
 <!-- --> <!-- --> <code>wt.process.randomize</code><br>
 <!-- --> <!-- --> <!-- -->&lt;<code>wt.process.randomize.replace.normal</code>&gt;<br>
 <!-- --> <!-- --> <!-- -->&lt;<code>wt.process.randomize.replace.exclude</code>&gt;<br>
-]</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="save-area">Save Area<a class="hash-link" href="#save-area" title="Direct link to heading">​</a></h3><p>The process for saving an area to data. Used for backups, as well as by the General Tool&#x27;s Copy operation, and Clone operation with the Template mode.<br>
+]</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="save-area">Save Area<a class="hash-link" href="#save-area" title="Direct link to heading">​</a></h3><p>The process for saving an area to data. Used for backups, as well as by the General Tool&#x27;s <a href="/worldtool-docs/docs/general-tool/options#copy-and-paste">Copy operation</a>, and <a href="/worldtool-docs/docs/general-tool/clone">Clone operation</a> with the <a href="/worldtool-docs/docs/general-tool/clone#modes">Template mode</a>.<br>
 <code>ID</code>: <code>worldtool:save_area</code><br>
 <code>Tags</code>: <!-- -->[<br>
 <!-- --> <!-- --> <code>wt.process.save_area</code><br>
@@ -128,7 +128,7 @@
 <!-- --> <!-- --> <!-- --> <!-- --> <!-- --> <!-- --> <!-- -->}<br>
 <!-- --> <!-- --> <!-- --> <!-- --> <!-- -->}<br>
 <!-- --> <!-- --> <!-- -->]<br>
-}</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="load-area">Load Area<a class="hash-link" href="#load-area" title="Direct link to heading">​</a></h3><p>The process for loading an area from data. Used by undo, redo, as well as by the General Tool&#x27;s Paste operation, and Clone operation with the Template mode.<br>
+}</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="load-area">Load Area<a class="hash-link" href="#load-area" title="Direct link to heading">​</a></h3><p>The process for loading an area from data. Used by <a href="/worldtool-docs/docs/general-tool/options#undo-and-redo">undo</a>, <a href="/worldtool-docs/docs/general-tool/options#undo-and-redo">redo</a>, as well as by the General Tool&#x27;s <a href="/worldtool-docs/docs/general-tool/options#copy-and-paste">Paste operation</a>, and <a href="/worldtool-docs/docs/general-tool/clone">Clone operation</a> with the <a href="/worldtool-docs/docs/general-tool/clone#modes">Template mode</a>.<br>
 <code>ID</code>: <code>worldtool:load_area</code><br>
 <code>Tags</code>: <!-- -->[<br>
 <!-- --> <!-- --> <code>wt.process.load_area</code><br>
@@ -143,7 +143,7 @@
 <!-- --> <!-- --> <!-- --> <!-- --> ]<br>
 <!-- --> <!-- --> <!-- --> <!-- --> <code>Pos</code> (List of 3 doubles, optional) - The starting position for this area.<br>
 <!-- --> <!-- --> <!-- -->]<br>
-}</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="checkered">Checkered<a class="hash-link" href="#checkered" title="Direct link to heading">​</a></h3><p>The process for placing an every-other-block pattern. Used by the General Tool&#x27;s Checkered operation.<br>
+}</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="checkered">Checkered<a class="hash-link" href="#checkered" title="Direct link to heading">​</a></h3><p>The process for placing an every-other-block pattern. Used by the General Tool&#x27;s <a href="/worldtool-docs/docs/general-tool/checkered">Checkered operation</a>.<br>
 <code>ID</code>: <code>worldtool:checkered</code><br>
 <code>Tags</code>: <!-- -->[<br>
 <!-- --> <!-- --> <code>wt.process.checkered</code><br>
@@ -153,7 +153,7 @@
 <!-- --> <!-- --> <!-- -->&lt;<code>wt.process.checkered.alternate.x</code>&gt;<br>
 <!-- --> <!-- --> <!-- -->&lt;<code>wt.process.checkered.alternate.y</code>&gt;<br>
 <!-- --> <!-- --> <!-- -->&lt;<code>wt.process.checkered.alternate.z</code>&gt;<br>
-]</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="shell">Shell<a class="hash-link" href="#shell" title="Direct link to heading">​</a></h3><p>The process for placing a shell around the inside of the area. Used by the General Tool&#x27;s Shell operation.<br>
+]</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="shell">Shell<a class="hash-link" href="#shell" title="Direct link to heading">​</a></h3><p>The process for placing a shell around the inside of the area. Used by the General Tool&#x27;s <a href="/worldtool-docs/docs/general-tool/shell">Shell operation</a>.<br>
 <code>ID</code>: <code>worldtool:shell</code><br>
 <code>Tags</code>: <!-- -->[<br>
 <!-- --> <!-- --> <code>wt.process.shell</code><br>
@@ -167,14 +167,14 @@
 ]<br>
 <code>Input</code>: <!-- -->[<br>
 <!-- --> <!-- --> <code>SideSize</code> (Integer) - The size of the sides.<br>
-]</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="outline">Outline<a class="hash-link" href="#outline" title="Direct link to heading">​</a></h3><p>The process for outlining an area. Used by the General Tool&#x27;s Outline operation.<br>
+]</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="outline">Outline<a class="hash-link" href="#outline" title="Direct link to heading">​</a></h3><p>The process for outlining an area. Used by the General Tool&#x27;s <a href="/worldtool-docs/docs/general-tool/outline">Outline operation</a>.<br>
 <code>ID</code>: <code>worldtool:outline</code><br>
 <code>Tags</code>: <!-- -->[<br>
 <!-- --> <!-- --> <code>wt.process.outline</code><br>
 ]<br>
 <code>Input</code>: <!-- -->[<br>
 <!-- --> <!-- --> <code>Size</code> (Integer) - The size of the outlines.<br>
-]</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="greenery">Greenery<a class="hash-link" href="#greenery" title="Direct link to heading">​</a></h3><p>The process for placing greenery. Used by the General Tool&#x27;s Greenery operation and the Brush Tool&#x27;s Greenery brush.<br>
+]</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="greenery">Greenery<a class="hash-link" href="#greenery" title="Direct link to heading">​</a></h3><p>The process for placing greenery. Used by the General Tool&#x27;s <a href="/worldtool-docs/docs/general-tool/greenery">Greenery operation</a> and the Brush Tool&#x27;s <a href="/worldtool-docs/docs/brush_tool/greenery">Greenery brush</a>.<br>
 <code>ID</code>: <code>worldtool:greenery</code><br>
 <code>Tags</code>: <!-- -->[<br>
 <!-- --> <!-- --> <code>wt.process.greenery</code><br>
@@ -194,14 +194,14 @@
 ]<br>
 <code>Input</code>: <!-- -->[<br>
 <!-- --> <!-- --> <code>Rate</code> (Integer) - The percentage chance to place greenery on a block.<br>
-]</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="shatter">Shatter<a class="hash-link" href="#shatter" title="Direct link to heading">​</a></h3><p>The process for shattering blocks in an area. Used by the General Tool&#x27;s Shatter operation.<br>
+]</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="shatter">Shatter<a class="hash-link" href="#shatter" title="Direct link to heading">​</a></h3><p>The process for shattering blocks in an area. Used by the General Tool&#x27;s <a href="/worldtool-docs/docs/general-tool/shatter">Shatter operation</a>.<br>
 <code>ID</code>: <code>worldtool:shatter</code><br>
 <code>Tags</code>: <!-- -->[<br>
 <!-- --> <!-- --> <code>wt.process.shatter</code><br>
 <!-- --> <!-- --> <!-- -->&lt;<code>wt.process.shatter.drop_items</code>&gt;<br>
 <!-- --> <!-- --> <!-- -->&lt;<code>wt.process.shatter.replace.normal</code>&gt;<br>
 <!-- --> <!-- --> <!-- -->&lt;<code>wt.process.shatter.replace.exclude</code>&gt;<br>
-]</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="repeat">Repeat<a class="hash-link" href="#repeat" title="Direct link to heading">​</a></h3><p>The process for repeating an area multiple times. Used by the General Tool&#x27;s Repeat operation.<br>
+]</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="repeat">Repeat<a class="hash-link" href="#repeat" title="Direct link to heading">​</a></h3><p>The process for repeating an area multiple times. Used by the General Tool&#x27;s <a href="/worldtool-docs/docs/general-tool/repeat">Repeat operation</a>.<br>
 <code>ID</code>: <code>worldtool:repeat</code><br>
 <code>Tags</code>: <!-- -->[<br>
 <!-- --> <!-- --> <code>wt.process.repeat</code><br>
@@ -219,7 +219,7 @@
 <!-- --> <!-- --> <!-- --> <!-- --> <code>Z</code> (Integer) - The amount/direction to repeat along the Z axis.<br>
 <!-- --> <!-- --> <!-- -->}<br>
 <!-- --> <!-- --> <code>Spacing</code> (Integer) - The amount of blocks between each copy.<br>
-}</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="smooth">Smooth<a class="hash-link" href="#smooth" title="Direct link to heading">​</a></h3><p>The process for smoothing an area. Used by the General Tool&#x27;s Smooth operation.<br>
+}</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="smooth">Smooth<a class="hash-link" href="#smooth" title="Direct link to heading">​</a></h3><p>The process for smoothing an area. Used by the General Tool&#x27;s <a href="/worldtool-docs/docs/general-tool/smooth">Smooth operation</a>.<br>
 <code>ID</code>: <code>worldtool:smooth</code><br>
 <code>Tags</code>: <!-- -->[<br>
 <!-- --> <!-- --> <code>wt.process.smooth</code><br>
@@ -236,38 +236,38 @@
 ]<br>
 <code>Input</code>: {<br>
 <!-- --> <!-- --> <code>Threshold</code> (Integer) - The maximum distance in blocks to check for an edge&#x27;s size.<br>
-}</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="command-list">Command List<a class="hash-link" href="#command-list" title="Direct link to heading">​</a></h3><p>The process for finding commands from command blocks. Used by the General Tool&#x27;s Command List operation.<br>
+}</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="command-list">Command List<a class="hash-link" href="#command-list" title="Direct link to heading">​</a></h3><p>The process for finding commands from command blocks. Used by the General Tool&#x27;s <a href="/worldtool-docs/docs/general-tool/command-list">Command List operation</a>.<br>
 <code>ID</code>: <code>worldtool:command_list</code><br>
 <code>Tags</code>: <!-- -->[<br>
 <!-- --> <!-- --> <code>wt.process.command_list</code><br>
-]</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="paint">Paint<a class="hash-link" href="#paint" title="Direct link to heading">​</a></h3><p>The process for painting blocks. Used by the Brush Tool&#x27;s Paint brush.<br>
+]</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="paint">Paint<a class="hash-link" href="#paint" title="Direct link to heading">​</a></h3><p>The process for painting blocks. Used by the Brush Tool&#x27;s <a href="/worldtool-docs/docs/brush_tool/paint">Paint brush</a>.<br>
 <code>ID</code>: <code>worldtool:paint</code><br>
 <code>Tags</code>: <!-- -->[<br>
 <!-- --> <!-- --> <code>wt.process.paint</code><br>
 <!-- --> <!-- --> <code>wt.no_message</code><br>
-]</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="replace-brush">Replace (Brush)<a class="hash-link" href="#replace-brush" title="Direct link to heading">​</a></h3><p>Another process for replacing blocks in an area. Used by the Brush Tool&#x27;s Replace brush.<br>
+]</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="replace-brush">Replace (Brush)<a class="hash-link" href="#replace-brush" title="Direct link to heading">​</a></h3><p>Another process for replacing blocks in an area. Used by the Brush Tool&#x27;s <a href="/worldtool-docs/docs/brush_tool/replace">Replace brush</a>.<br>
 <code>ID</code>: <code>worldtool:replace_brush</code><br>
 <code>Tags</code>: <!-- -->[<br>
 <!-- --> <!-- --> <code>wt.process.replace_brush</code><br>
 <!-- --> <!-- --> <code>wt.no_message</code><br>
 <!-- --> <!-- --> <!-- -->&lt;<code>wt.process.replace_brush.normal</code>&gt;<br>
 <!-- --> <!-- --> <!-- -->&lt;<code>wt.process.replace_brush.exclude</code>&gt;<br>
-]</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="cylinder">Cylinder<a class="hash-link" href="#cylinder" title="Direct link to heading">​</a></h3><p>The process for generating a cylinder shape. Used by the Shape Generation Tool&#x27;s Cylinder shape.<br>
+]</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="cylinder">Cylinder<a class="hash-link" href="#cylinder" title="Direct link to heading">​</a></h3><p>The process for generating a cylinder shape. Used by the Shape Generation Tool&#x27;s <a href="/worldtool-docs/docs/shape-generation-tool/cylinder">Cylinder shape</a>.<br>
 <code>ID</code>: <code>worldtool:cylinder</code><br>
 <code>Tags</code>: <!-- -->[<br>
 <!-- --> <!-- --> <!-- -->&lt;<code>wt.process.cylinder.vertical</code>&gt;<br>
 <!-- --> <!-- --> <!-- -->&lt;<code>wt.process.cylinder.horizontal</code>&gt;<br>
-]</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="cone">Cone<a class="hash-link" href="#cone" title="Direct link to heading">​</a></h3><p>The process for generating a cone shape. Used by the Shape Generation Tool&#x27;s Cone shape.<br>
+]</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="cone">Cone<a class="hash-link" href="#cone" title="Direct link to heading">​</a></h3><p>The process for generating a cone shape. Used by the Shape Generation Tool&#x27;s <a href="/worldtool-docs/docs/shape-generation-tool/cone">Cone shape</a>.<br>
 <code>ID</code>: <code>worldtool:cone</code><br>
 <code>Tags</code>: <!-- -->[<br>
 <!-- --> <!-- --> <!-- -->&lt;<code>wt.process.cone.vertical</code>&gt;<br>
 <!-- --> <!-- --> <!-- -->&lt;<code>wt.process.cone.horizontal</code>&gt;<br>
-]</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="sphere">Sphere<a class="hash-link" href="#sphere" title="Direct link to heading">​</a></h3><p>The process for generating a sphere shape. Used by the Shape Generation Tool&#x27;s Sphere shape.<br>
+]</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="sphere">Sphere<a class="hash-link" href="#sphere" title="Direct link to heading">​</a></h3><p>The process for generating a sphere shape. Used by the Shape Generation Tool&#x27;s <a href="/worldtool-docs/docs/shape-generation-tool/sphere">Sphere shape</a>.<br>
 <code>ID</code>: <code>worldtool:sphere</code><br>
 <code>Tags</code>: <!-- -->[<br>
 <!-- --> <!-- --> <code>wt.process.sphere</code><br>
 ]</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="log">Log<a class="hash-link" href="#log" title="Direct link to heading">​</a></h2><p>The log logs various happenings related to processes not started by players. The log can be viewed with the command <code>/function worldtool:cmd/view_log</code> and cleared with the command <code>/function worldtool:cmd/clear_log</code>.</p></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages navigation"><a class="pagination-nav__link pagination-nav__link--prev" href="/worldtool-docs/docs/category/technical"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Technical</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/worldtool-docs/docs/technical/area-storage-system"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Area Storage System</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#process-data" class="table-of-contents__link toc-highlight">Process Data</a></li><li><a href="#list-of-processes" class="table-of-contents__link toc-highlight">List of Processes</a><ul><li><a href="#fill" class="table-of-contents__link toc-highlight">Fill</a></li><li><a href="#replace" class="table-of-contents__link toc-highlight">Replace</a></li><li><a href="#filter-measure" class="table-of-contents__link toc-highlight">Filter Measure</a></li><li><a href="#clone" class="table-of-contents__link toc-highlight">Clone</a></li><li><a href="#randomization-source" class="table-of-contents__link toc-highlight">Randomization Source</a></li><li><a href="#randomize" class="table-of-contents__link toc-highlight">Randomize</a></li><li><a href="#save-area" class="table-of-contents__link toc-highlight">Save Area</a></li><li><a href="#load-area" class="table-of-contents__link toc-highlight">Load Area</a></li><li><a href="#checkered" class="table-of-contents__link toc-highlight">Checkered</a></li><li><a href="#shell" class="table-of-contents__link toc-highlight">Shell</a></li><li><a href="#outline" class="table-of-contents__link toc-highlight">Outline</a></li><li><a href="#greenery" class="table-of-contents__link toc-highlight">Greenery</a></li><li><a href="#shatter" class="table-of-contents__link toc-highlight">Shatter</a></li><li><a href="#repeat" class="table-of-contents__link toc-highlight">Repeat</a></li><li><a href="#smooth" class="table-of-contents__link toc-highlight">Smooth</a></li><li><a href="#command-list" class="table-of-contents__link toc-highlight">Command List</a></li><li><a href="#paint" class="table-of-contents__link toc-highlight">Paint</a></li><li><a href="#replace-brush" class="table-of-contents__link toc-highlight">Replace (Brush)</a></li><li><a href="#cylinder" class="table-of-contents__link toc-highlight">Cylinder</a></li><li><a href="#cone" class="table-of-contents__link toc-highlight">Cone</a></li><li><a href="#sphere" class="table-of-contents__link toc-highlight">Sphere</a></li></ul></li><li><a href="#log" class="table-of-contents__link toc-highlight">Log</a></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2022 Ellivers. Built with Docusaurus.</div></div></div></footer></div>
-<script src="/worldtool-docs/assets/js/runtime~main.9ae273ce.js"></script>
+<script src="/worldtool-docs/assets/js/runtime~main.59a37b06.js"></script>
 <script src="/worldtool-docs/assets/js/main.51f09d9d.js"></script>
 </body>
 </html>
